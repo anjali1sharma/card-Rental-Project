@@ -1,0 +1,33 @@
+
+.container {
+    display: flex;
+    width: 55%;
+    margin: 15vh 20%;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .card {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    padding: 4rem;
+  }
+  .card {
+    padding: 2rem;
+  }
+  .card:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
